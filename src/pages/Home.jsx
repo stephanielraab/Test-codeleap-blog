@@ -65,7 +65,7 @@ return (
     {deleteItem && (
       <DeleteModal
         post={deleteItem}
-        onConfirm={() => handleDelete(deleteItem.id)} // Garanta que passa o ID
+        onConfirm={() => handleDelete(deleteItem.id)} 
         onCancel={() => setDeleteItem(null)}
       />
     )}

@@ -33,7 +33,7 @@ function Login() {
         <button 
           onClick={handleEnter} 
           className="btn-enter"
-          disabled={name.trim().length === 0} // Aproveitei para colocar o disabled aqui
+          disabled={name.trim().length === 0} 
         >
           ENTER
         </button>

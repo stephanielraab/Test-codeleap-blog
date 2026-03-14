@@ -21,7 +21,7 @@ function Home(){
 
 async function loadPosts(){
     const data = await getPosts()
-    setPosts(data.results)
+    setPosts([...data.results].reverse())
 }
 
 async function handleCreate(title,content){
@@ -61,7 +61,6 @@ return (
       </div>
     </main>
 
-    {/* Modais permanecem aqui embaixo */}
     {deleteItem && (
       <DeleteModal
         post={deleteItem}
